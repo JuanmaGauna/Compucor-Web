@@ -1,0 +1,75 @@
+/* High-tech glow and neon aesthetic inspired by dark sci-fi themes and electrical circuits */
+
+@keyframes shimmer {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animate-shimmer {
+    background-size: 200% auto;
+    animation: shimmer 6s linear infinite;
+  }
+  
+  /* Custom Scrollbar styling matching neon blue and electric indigo */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #040508;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0052ff;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00d2ff;
+  }
+  
+  /* Neon glow states */
+  .shadow-neon-sm {
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+  }
+  
+  .shadow-neon-lg {
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.45);
+  }
+  
+  .shadow-neon-btn {
+    box-shadow: 0 0 20px rgba(0, 82, 255, 0.25);
+  }
+  
+  .shadow-neon-btn:hover {
+    box-shadow: 0 0 35px rgba(0, 210, 255, 0.5);
+  }
+  
+  /* Elegant header link bottom border expander */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #00d2ff;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Interactive Canvas Background Layout */
+  #circuit-canvas {
+    background-color: #040508;
+  }
+  

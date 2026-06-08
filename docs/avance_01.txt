@@ -1,0 +1,7 @@
+Proyecto Compucor Web
+Estado:
+- HTML recuperado
+- CSS recuperado
+- JS recuperado
+- Sitio ejecutando localmente
+Fecha: 08/06/2026
