@@ -51,16 +51,19 @@
 
     <!-- TailwindCSS & Lucide Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.469.0"></script>
+    <!-- Font Awesome (solo para el ícono de WhatsApp; Lucide no incluye logos de marcas) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- SEO Local JSON-LD Structured Data Schema -->
     <script type="application/ld+json">
     {
-        "foundingDate": "2013",
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Compucor Tecnología",
+      "description": "Compucor Tecnología brinda servicio técnico informático, reparación de computadoras, notebooks y celulares, instalación de cámaras de seguridad, redes WiFi y soluciones tecnológicas en San Francisco, Córdoba.",
+      "foundingDate": "2013",
       "image": "https://www.compucor.com.ar/assets/img/og-image.png",
       "logo": "https://www.compucor.com.ar/assets/img/logo.png",
       "@id": "https://www.compucor.com.ar/#localbusiness",
@@ -224,7 +227,7 @@
 <body class="bg-[#040508] text-[#F4F6FA] font-sans overflow-x-hidden antialiased selection:bg-[#00d2ff]/30 selection:text-white">
 
     <!-- Interactive Canvas Background representing Neon Futuristic Circuits -->
-    <canvas id="circuit-canvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-40"></style></canvas>
+    <canvas id="circuit-canvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-40" aria-hidden="true"></canvas>
 
     <!-- Header / Interactive Sticky Navbar -->
     <header class="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md border-b border-[#0052ff]/20 bg-[#040508]/90" id="main-header">
@@ -298,12 +301,13 @@
     <a href="https://wa.me/5493564697913?text=Hola%20Compucor%20Tecnología,%20necesito%20realizar%20una%20consulta%20o%20presupuesto."
        target="_blank"
        rel="noopener"
-       class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-gradient-to-tr from-[#0052ff] to-[#00d2ff] rounded-full shadow-neon-lg hover:scale-110 active:scale-95 transition-all duration-300 hover:rotate-6"
+       class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] rounded-full shadow-[0_0_30px_rgba(37,211,102,0.5)] hover:scale-110 active:scale-95 transition-all duration-300 hover:rotate-6"
        aria-label="Contactar por WhatsApp">
-        <i data-lucide="message-circle" class="w-7 h-7 text-white fill-current"></i>
+        <!-- Ícono de WhatsApp desde la librería Font Awesome (cargada en el head), sin archivo de imagen -->
+        <i class="fa-brands fa-whatsapp text-white text-3xl" aria-hidden="true"></i>
         <span class="absolute -top-1 -right-1 flex h-3 w-3">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00d2ff] opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-[#00d2ff]"></span>
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
         </span>
     </a>
 
@@ -316,7 +320,7 @@
             </span>
 
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight max-w-5xl leading-tight">
-                Soluciones Tecnológicas para <span class="bg-gradient-to-r from-[#00d2ff] via-[#0052ff] to-[#00d2ff] bg-clip-text text-transparent bg-[length:200%_auto] animate-shimmer">Hogares, Comercios y Empresas</span>.
+                Soluciones Tecnológicas en San Francisco para <span class="bg-gradient-to-r from-[#00d2ff] via-[#0052ff] to-[#00d2ff] bg-clip-text text-transparent bg-[length:200%_auto] animate-shimmer">Hogares, Comercios y Empresas</span>.
             </h1>
 
             <p class="mt-6 text-base sm:text-xl text-[#94A3B8] max-w-3xl leading-relaxed">
